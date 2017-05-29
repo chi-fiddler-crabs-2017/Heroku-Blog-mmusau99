@@ -29,15 +29,15 @@ gem 'jbuilder', '~> 1.0.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+ gem 'sdoc', require: false
 end
 
 gem 'devise', '~>3.3.0'
 
-group :production do
-	gem 'pg'
-	gem 'rails_12factor'
-end
+
+gem 'pg'
+gem 'rails_12factor'
+
 group :development do
 	gem 'sqlite3'
 
