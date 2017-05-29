@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
@@ -31,11 +32,16 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 gem 'devise', '~>3.3.0'
 
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+end
+group :development do
+	gem 'sqlite3'
+
 end
 
 # Use ActiveModel has_secure_password
